@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join The Best Dance School in Town</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url('dance1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 1.2rem;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    header{
+        text-align: center;
+        height: 10vh;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        font-size: 2em;
+    }
+    header img{
+        width: 10vw;
+        height: 10vh;
+    }
+    header span{
+        margin-right: 2%;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        padding: 6px 6px;
+        font-size: 1.3rem;
+    }
+    .navbar a:hover{
+        color: white;
+        background-color: black;
+        border-radius: 10px;   
+    }
+    .btn_hdr{
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+        font-size: 1.3rem;
+        margin-top: 10px;
+
+    }
+    
+    .form_data{
+        display: block;
+        margin: .2% auto;
+        text-align: center;
+    }
+    #home,#about,#dance{
+    text-align: center;
+   }
+    #dance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }  
+   .dance_types_group{
+    display: flex;
+    align-items: center;
+    text-align: center;
+   }
+   footer{
+    position: fixed;
+    top: 95vh;
+}
+   .dance_types img{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 10px;
+}
+   .dance_types{
+    margin: 10px;
+}
+   #about img{
+    width: 50vw;
+    height: 50vh;
+}
+   input[type="submit"]{
+    cursor: pointer;
+} 
+   @media (min-width:280px) and (max-width:653px) {
+    body{
+        font-size: .6rem;
+    }
+    header{
+        text-align: center;
+        height: 10vh;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        font-size: 1.3em;
+    }
+    header img{
+        width: 10vw;
+        height: 10vh;
+    }
+    header span{
+        margin-right: 2%;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        padding: 4px 4px;
+        font-size: .5rem;
+    }
+    .navbar a:hover{
+        color: white;
+        background-color: black;
+        border-radius: 5px;   
+    }
+    .btn_hdr{
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+        font-size: .3rem;
+        margin-top: 5px;
+    }
+    #about img{
+       width: 30vw;
+       height: 30vh;
+    }
+    .dance_types img{
+    width: 20vh;
+    height: 20vh;
+    border-radius: 5px;
+   }
+   }
+ 
+</style>
+<body>
+    <header id="hid">
+        <img src="dance_logo.png" alt="">
+        <span>ABC Dance Academy</span> 
+        <div >
+            <a href="call.py" class="btn_hdr">Call us now</a>
+            <a href="email.py" class="btn_hdr">Email us now</a>
+        </div>
+    </header>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#dance">Dance Types</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <section id="home">
+       <h3>Welcome to ABC Dance Academy</h3>
+       <p>ABC Dance Academy is one of the best dance schools in town, with an array of dance classes and sessions for the students. It is one of the very few institutes in the heart of the city to offer both Western Classical and Indian genres on Ballet, Waltz, Ballroom, Contemporary, Hip hop, Jazz, Tap dance, Folk dance, Bharatanatyam, Kathak, Kuchipudi, Odissi, Kathakali, Sattriya, Manipuri and Mohiniyattam.
+       </p>
+       <p>Committed to spreading and expansion of the dance community, the ABC Dance Academy holds professional training and grooming through the dance classes. A speculative learning opportunity is offered to the students.
+    </p>
+    </section>
+    <section id="dance">
+        <h3>These dance forms are taught at ABC Dance Academy</h3>
+        <div class="dance_types_group">
+        <div class="dance_types"><h4>Western Classical Dance</h4>
+        <img src="ballet.jpg" alt="">
+        </div>
+        <div class="dance_types"><h4>Indian Classical Dance</h4>
+        <img src="indian1.jpg" alt="">
+        </div>
+    </div>
+    </section>
+    <section id="about">
+        <p> ABC Dance Academy is an institution that personifies excellence in every form of Dance. The Institute is dedicated towards supplementing creativity, knowledge & performance in dance & preparing students for a variety of professions in these fields. Students learn dancing in groups which are choreographed by professional and trained dancers.</p>
+        <p>
+         Students are provided with a bunch of benefits by advancing physical, mental, and enthusiastic prosperity. Renowned and skillful teachers provide dance lessons mastering in each dance category.
+        </p>
+        <img src="indian.jpg" alt="">
+     </section>
+    <section id="contact">
+      <form action="noaction.py" name="form1">
+        <h3 class="form_data"> Fill this form</h3>      
+        <input type="text" name="" placeholder="Enter your name" class="form_data" required> 
+        <input type="text" name="" placeholder="Enter age" class="form_data"> 
+        <input type="text" name="" placeholder="Enter phone number" class="form_data" required> 
+        <input type="email" name="" placeholder="Enter email-id" class="form_data">
+        <div class="form_data"> Choose your gender
+        <input type="radio" name="gender" id="male"> 
+        <label for="male">Male</label>        
+        <input type="radio" name="gender" id="female" checked> 
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other"> 
+        <label for="other">Other</label>
+      </div>
+        <textarea name="" id="" cols="30" rows="10" class="form_data"></textarea>
+        <input type="submit" value="Submit your information" class="btn_hdr form_data">
+      </form>
+    </section>
+    <footer><a href="#hid" class="btn_hdr">Go to top</a></footer>
+</body>
+</html>
